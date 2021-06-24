@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+.home {
+  margin: 0;
+  padding: 0;
+}
+
+.home .home_container {
+  padding: 10px 11%;
+}
+
+.home .home_container .stock_details_table {
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding-top: 10px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  .home .home_container .stock_details_table {
+    display: none;
+  }
+}
+
+.home .home_container .stock_details_table .table_header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home .home_container .stock_details_table .table_header h3 {
+  position: absolute;
+  left: 20px;
+}
+
+.home .home_container .stock_details_table .table_header .search-box {
+  border-radius: 5px;
+  overflow: hidden;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .home_container .stock_details_table .table_header .search-box .search-text {
+  width: 300px;
+  border: none;
+  outline: none;
+  float: left;
+  padding: 4px;
+  line-height: 30px;
+  background-color: rgba(179, 146, 216, 0.2);
+}
+
+.home .home_container .stock_details_table .table_header .search-box .search-btn {
+  float: right;
+  width: 39px;
+  height: 38px;
+  background-color: rgba(179, 146, 216, 0.2);
+  overflow: hidden;
+  border-radius: 0px 5px 5px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+}
+
+.home .home_container .stock_details_table table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.home .home_container .stock_details_table table tr {
+  width: 100%;
+  border-bottom: 2px solid rgba(179, 146, 216, 0.5);
+}
+
+.home .home_container .stock_details_table table tr th {
+  font-size: 1.2vw;
+  width: 20%;
+  text-transform: uppercase;
+  background-color: rgba(179, 146, 216, 0.2);
+  border-top: 2px solid rgba(179, 146, 216, 0.5);
+  border-bottom: 2px solid rgba(179, 146, 216, 0.5);
+  color: rgba(43, 34, 53, 0.8);
+}
+
+.home .home_container .stock_details_table table tr th h5 {
+  margin: 10px;
+}
+
+.home .home_container .stock_details_table table tr td {
+  width: 20%;
+  text-align: center;
+}
+
+.home .home_container .stock_details_table table tr .symbol {
+  position: relative;
+}
+
+.home .home_container .stock_details_table table tr .symbol span {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: cornflowerblue;
+  font-weight: bolder;
+  background-color: rgba(179, 146, 216, 0.2);
+  padding: 0px 5px;
+  border-radius: 5px;
+}
+
+.home .home_container .stock_details_table table tr .market_cap {
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+.home .home_container .stock_details_table table tr .button button {
+  padding: 7px 14px;
+  border: none;
+  background-color: #43afda;
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home .home_container .stock_details_table table tr .current_price {
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+.home .home_container .stock_details_table table tr .current_price span {
+  font-weight: bold;
+}
+
+.home .home_container .stock_details_table .div_footer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .home_container .stock_details_table .div_footer .paginationBttns {
+  width: 100%;
+  height: 40px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .home_container .stock_details_table .div_footer .paginationBttns a {
+  padding: 6px;
+  margin: 8px;
+  border-radius: 5px;
+  color: cornflowerblue;
+  cursor: pointer;
+}
+
+.home .home_container .stock_details_table .div_footer .paginationBttns a:hover {
+  color: white;
+  background-color: cornflowerblue;
+}
+
+.home .home_container .stock_details_table .div_footer .paginationActive a {
+  background-color: cornflowerblue;
+  color: azure;
+}
+
+.home .home_container .stock_details_table .div_footer .paginationDisabled a {
+  color: grey;
+}
+
+.home .home_container .stock_details_table .div_footer .paginationDisabled a:hover {
+  background: none;
+  color: #a9afaf;
+}
+
+.mob_container {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mob_container button {
+  display: none;
+  font-size: 5vw;
+  text-decoration: none;
+  padding: 7px 14px;
+  border: none;
+  background-color: #8073f1;
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .mob_container button {
+    display: block;
+  }
+}
+
+.view {
+  margin: 0;
+  padding: 0;
+}
+
+.view .view_container {
+  padding: 10px 11%;
+}
+
+@media screen and (max-width: 800px) {
+  .view .view_container .hero_cards_display {
+    display: none;
+  }
+}
+
+.view .view_container .stock_details_table {
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding-top: 10px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.view .view_container .stock_details_table .table_header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.view .view_container .stock_details_table table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.view .view_container .stock_details_table table tr {
+  width: 100%;
+  border-bottom: 2px solid rgba(179, 146, 216, 0.5);
+}
+
+.view .view_container .stock_details_table table tr th {
+  font-size: 1.2vw;
+  text-transform: uppercase;
+  background-color: rgba(179, 146, 216, 0.2);
+  border-top: 2px solid rgba(179, 146, 216, 0.5);
+  border-bottom: 2px solid rgba(179, 146, 216, 0.5);
+  color: rgba(43, 34, 53, 0.8);
+}
+
+@media screen and (max-width: 800px) {
+  .view .view_container .stock_details_table table tr th {
+    font-size: 5vw;
+  }
+}
+
+.view .view_container .stock_details_table table tr th h5 {
+  margin: 10px;
+}
+
+.view .view_container .stock_details_table table tr td {
+  width: 20%;
+  text-align: center;
+}
+
+.view .view_container .stock_details_table table tr .symbol {
+  position: relative;
+}
+
+.view .view_container .stock_details_table table tr .symbol span {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: cornflowerblue;
+  font-weight: bolder;
+  background-color: rgba(179, 146, 216, 0.2);
+  padding: 0px 5px;
+  border-radius: 5px;
+}
+
+.view .view_container .stock_details_table table tr .market_cap {
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 800px) {
+  .view .view_container .stock_details_table table tr .market_cap {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .view .view_container .stock_details_table table tr .button {
+    display: none;
+  }
+}
+
+.view .view_container .stock_details_table table tr .button button {
+  padding: 7px 14px;
+  border: none;
+  background-color: #8073f1;
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.view .view_container .stock_details_table table tr .current_price {
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 800px) {
+  .view .view_container .stock_details_table table tr .current_price {
+    display: none;
+  }
+}
+
+.view .view_container .stock_details_table table tr .current_price span {
+  font-weight: bold;
+}
+
+.view .view_container .stock_details_table .div_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.view .view_container .stock_details_table .div_footer .button {
+  margin-bottom: 10px;
+}
+
+.view .view_container .stock_details_table .div_footer .button button {
+  padding: 7px 14px;
+  border: none;
+  background-color: #8073f1;
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .view .view_container .stock_details_table .div_footer .button button {
+    font-size: 5vw;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  background-color: #3b5998;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.header img {
+  width: 90px;
+  padding: 10px 25px;
+}
+
+.hero_cards_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero_cards_container .hero_card {
+  padding: 25px;
+  width: 25%;
+  border: 1px dotted grey;
+  background-color: #eeeeee;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .hero_cards_container .hero_card {
+    width: 100%;
+  }
+}
+
+.hero_cards_container .hero_card .top_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero_cards_container .hero_card .top_block p {
+  font-weight: bolder;
+}
+
+.hero_cards_container .hero_card .top_block img {
+  height: 40px;
+}
+
+.hero_cards_container .hero_card .bottom_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=global.css.map */

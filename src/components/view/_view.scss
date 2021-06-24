@@ -1,0 +1,118 @@
+@import '../../styles/mixins';
+.view {
+  margin: 0;
+  padding: 0;
+  .view_container {
+    padding: 10px 11%;
+    .hero_cards_display {
+      @include mQ(800px) {
+        display: none;
+      }
+    }
+    .stock_details_table {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      padding-top: 10px;
+      border-radius: 15px;
+      overflow: hidden;
+
+      .table_header {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        tr {
+          width: 100%;
+          border-bottom: 2px solid $border;
+          th {
+            font-size: 1.2vw;
+            text-transform: uppercase;
+            background-color: $divBackground;
+            border-top: 2px solid $border;
+            border-bottom: 2px solid $border;
+            color: $color;
+            @include mQ(800px) {
+              font-size: 5vw;
+            }
+            h5 {
+              margin: 10px;
+            }
+          }
+          td {
+            width: 20%;
+            text-align: center;
+          }
+          .symbol {
+            position: relative;
+            span {
+              width: fit-content;
+              color: cornflowerblue;
+              font-weight: bolder;
+              background-color: $divBackground;
+              padding: 0px 5px;
+              border-radius: 5px;
+            }
+          }
+          .market_cap {
+            font-size: 1vw;
+            font-weight: 500;
+            @include mQ(800px) {
+              display: none;
+            }
+          }
+          .button {
+            @include mQ(800px) {
+              display: none;
+            }
+            button {
+              padding: 7px 14px;
+              border: none;
+              background-color: rgb(128, 115, 241);
+              font-weight: bold;
+              font-family: 'Quicksand', sans-serif;
+              color: #fff;
+              border-radius: 5px;
+              cursor: pointer;
+            }
+          }
+          .current_price {
+            font-size: 1vw;
+            font-weight: 500;
+            @include mQ(800px) {
+              display: none;
+            }
+            span {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      .div_footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .button {
+          margin-bottom: 10px;
+          button {
+            padding: 7px 14px;
+            border: none;
+            background-color: rgb(128, 115, 241);
+            font-weight: bold;
+            font-family: 'Quicksand', sans-serif;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            @include mQ(800px) {
+              font-size: 5vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
