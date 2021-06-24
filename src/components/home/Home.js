@@ -87,7 +87,7 @@ const Home = () => {
   useEffect(() => {
     axios
       .get(
-        'https://api.nomics.com/v1/currencies/ticker?key=c692ca1e205a0d3f84ef917abe3168f7996588ff&per-page=100'
+        'https://cors-anywhere.herokuapp.com/https://api.nomics.com/v1/currencies/ticker?key=c692ca1e205a0d3f84ef917abe3168f7996588ff&per-page=100'
       )
       .then((res) => {
         setC_coins(res.data);
