@@ -84,10 +84,18 @@ const Home = () => {
       );
     });
 
+  const config = {
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
+    },
+  };
+
   useEffect(() => {
     axios
       .get(
-        'https://api.nomics.com/v1/currencies/ticker?key=c692ca1e205a0d3f84ef917abe3168f7996588ff&per-page=100'
+        'https://api.nomics.com/v1/currencies/ticker?key=c692ca1e205a0d3f84ef917abe3168f7996588ff&per-page=100',
+        config
       )
       .then((res) => {
         setC_coins(res.data);
